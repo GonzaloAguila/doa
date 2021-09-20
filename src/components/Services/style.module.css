@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Questrial&display=swap');
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Staatliches', cursive;
+}
+
+.row {
+    height: 20%;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{ 
+    width: 33.3%;
+    height: 230px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+
+.bottomrow{
+    background-color: var(--text-terciary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    max-width: 100%;
+    color: black;
+}
+
+.toprow{
+    background-color: var(--text-secondary);
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    max-width: 100%;
+    color: mintcream;
+}
+
+.bottomcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    text-align: center;
+}
+
+
+.bottomcard h4 {
+    font-size: 45px;
+    padding: 10px;
+}
+
+.bottomcard h5 {
+    font-size: 18px;
+    padding: 10px;
+    letter-spacing: 1.8px;
+}
+
+.par {
+    background-color: var(--text-primary);
+    color: #ffffff;
+}
+
+.impar {
+    background-color: #ffffff;
+    color: var(--text-primary);
+}
+
+.icon {
+    font-size: 60px;
+}

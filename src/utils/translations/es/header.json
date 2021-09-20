@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "service": "Servicio",
+        "idioma": "Idioma",
+        "estrategia": "Estrategia",
+        "software": "Software",
+        "contacto": "Contacto"
+    },
+    "hero" : {
+        "bienvenida": "Bienvenido a",
+        "subtitulo": "Nuestra agilidad no compromete la calidad.",
+        "button": "Solicitar presupuesto"
+    }
+   }

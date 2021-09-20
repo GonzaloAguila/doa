@@ -1,0 +1,14 @@
+{
+ "navbar": {
+     "service": "Service",
+     "idioma": "Language",
+     "estrategia": "Strategy",
+     "software": "Software",
+     "contacto": "Contact"
+ },
+ "hero" : {
+     "bienvenida": "Welcome to",
+     "subtitulo": "Our speed does not compromise our quality.",
+     "button": "Request a quote"
+ }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Questrial&display=swap');
+
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 50%;
+    margin: 0 12px;
+    font-size: 4rem;
+    color: var(--text-secondary);
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+}
+
+.container{
+    padding: 20px;
+}
+
+.item img {
+    object-fit: cover;
+    max-width: 290px;
+    max-height: 120px;
+    overflow: hidden;
+    padding: 10px 0;
+
+}
+
+.item h5 {
+    font-size: 25px;
+}

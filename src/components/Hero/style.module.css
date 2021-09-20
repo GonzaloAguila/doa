@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Questrial&display=swap');
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    max-height: 100%;
+    flex-direction: column;
+    color: #ffffff;
+    position: relative;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hero h2 {
+    max-height: 100%;
+    padding-top: 15px;
+    font-size: 65px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.hero h3 {
+    font-size: 35px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 1;
+}
+
+.hero span {
+    color: var(--text-primary);
+}
+
+.herobtn {
+    -webkit-appearance: none;
+    margin-top: 25px;
+    width: 250px;
+    color: #ffffff;
+    font-size: 22px;
+    background-color: var(--text-primary);
+    border-radius: 5%;
+    padding: 20px 10px;
+    font-family: 'Staatliches', cursive;
+    cursor: pointer;
+    text-align: center;
+ }
+.hero img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+
