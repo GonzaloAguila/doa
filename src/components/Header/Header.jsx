@@ -17,8 +17,7 @@ function Header() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 width: '100vw',
-                height: '650px',
-                maxWidth: '100%',
+                maxWidth: '100vw',
             }}
         >
             <div className={styles.container}>

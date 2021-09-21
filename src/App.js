@@ -9,16 +9,17 @@ import styles from './index.css'
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <About />
+{/*     
       <Services />
       <Slideshow />
       <Map />
       <RequestForm />
-      <Footer />
-    </div>
-  );
+      <Footer /> */}
+    </>
+  )
 }
 
 export default App;

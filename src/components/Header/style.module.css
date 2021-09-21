@@ -4,6 +4,7 @@
 
 .container {
     height: 120px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,4 +83,34 @@ ul {
     height: 180px;
     padding-top: 30px;
 }
+
+@media (max-width: 740px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+    }
+    .secondItem {
+        display: none;
+    }
+    .firstItem {
+        width: 50%;
+    }
+    .thirdItem {
+        width: 50%;
+    }
+    .flag {
+        padding: 0 auto;
+        border-radius: 20%;
+        width: 70px;
+        border-radius: 90%;
+    }
+
+}
+
+@media (min-width: 450px) {
+     
+}
+
 

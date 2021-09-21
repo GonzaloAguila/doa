@@ -7,14 +7,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
     max-height: 100%;
     flex-direction: column;
     color: #ffffff;
     position: relative;
     letter-spacing: 2px;
     text-align: center;
-    margin-top: 30px;
 }
 
 .hero h2 {
@@ -36,7 +34,6 @@
 
 .herobtn {
     -webkit-appearance: none;
-    margin-top: 25px;
     width: 250px;
     color: #ffffff;
     font-size: 22px;
@@ -51,5 +48,35 @@
     height: 200px;
     width: 200px;
     margin-top: 20px;
+}
+
+@media (max-width: 740px) {
+    .herobtn{ 
+        display: none;
+    }
+    .hero {
+        max-width:100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 65%;
+    }
+    .hero h2 {
+        max-height: 100%;
+        padding-top: 10px;
+        font-size: 40px;
+        width: 90%;
+    }
+    .hero h3 {
+        max-height: 100%;
+        padding-top: 10px;
+        font-size: 25px;
+        width: 90%;
+    }
+    .hero img {
+        height: 150px;
+        width: 150px;
+        margin-top: 10px;
+    }
+
 }
 
