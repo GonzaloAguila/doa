@@ -36,10 +36,6 @@ function Services() {
             </div>
             <div className={styles.bottomrow}>
                 <div className={styles.bottomcard}>
-                    <h4>11111</h4>
-                    <h5>Algo mas para poner aca</h5>
-                </div>
-                <div className={styles.bottomcard}>
                     <h4>134</h4>
                     <h5>Proyectos entregados.</h5>
                 </div>

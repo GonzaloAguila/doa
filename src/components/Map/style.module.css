@@ -45,4 +45,30 @@
   font-size: 18px;
   letter-spacing: 1.5px;
 }
+.arrow {
+    margin-right: 10px;
+    min-height: 20px;
+    min-width: 20px;
+}
 
+@media (max-width: 740px) {
+    .card {
+        font-size: 15px;
+    }
+    .dataContainer {
+        padding-top: 8px;
+    }
+    .contentContainer {
+        padding: 0 12px;
+    }
+    .toprow {
+        font-size: 30px;
+        height: 80px;
+    }
+    .contentTitle {
+        max-width: 70%;
+    }
+    .arrow {
+        margin-right: 10px;
+    }
+}

@@ -35,3 +35,14 @@
 .item h5 {
     font-size: 25px;
 }
+
+@media (max-width: 740px) {
+    .item img {
+        max-width: 240px;
+        max-height: 100px;
+        padding: 5px 0;
+    }
+    .container{
+        padding: 10px;
+    }
+}
