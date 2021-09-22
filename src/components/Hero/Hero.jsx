@@ -2,18 +2,25 @@ import React from 'react';
 import experience from '../../assets/images/experience.png';
 import { useTranslation } from 'react-i18next';
 import styles from './style.module.css';
+import Typewriter from 'typewriter-effect';
+
 
 function Hero() {
     const [t, i18n] = useTranslation('header');
+    const initMessage = t('hero.bienvenida')
 
     return (
         <div className={styles.hero}>
-            <h2>
-                {t('hero.bienvenida')} <span>DOA</span>
-            </h2>
+                <Typewriter 
+                  options={{
+                    strings: [`${initMessage} DOA!`,],
+                    autoStart: true,
+                    loop: true,
+                    delay: 120
+                  }}
+                />
             <img src={experience}></img>
             <h3>{t('hero.subtitulo')} </h3>
-            <button className={styles.herobtn}>{t('hero.button')}</button>
         </div>
     );
 }

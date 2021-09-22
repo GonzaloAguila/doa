@@ -15,12 +15,6 @@
     text-align: center;
 }
 
-.hero h2 {
-    max-height: 100%;
-    padding-top: 15px;
-    font-size: 65px;
-    font-family: 'Abril Fatface', cursive;
-}
 
 .hero h3 {
     font-size: 35px;
@@ -29,7 +23,11 @@
 }
 
 .hero span {
-    color: var(--text-primary);
+    color: var(--text-white);
+    max-height: 100%;
+    padding-top: 15px;
+    font-size: 65px;
+    font-family: 'Abril Fatface', cursive;
 }
 
 .herobtn {
@@ -60,7 +58,7 @@
         text-align: center;
         height: 65%;
     }
-    .hero h2 {
+    .typer {
         max-height: 100%;
         padding-top: 10px;
         font-size: 40px;
@@ -77,6 +75,11 @@
         width: 150px;
         margin-top: 10px;
     }
+    .hero span {
+        font-size: 28px;
+        text-align: center;
+    }
+    
 
 }
 

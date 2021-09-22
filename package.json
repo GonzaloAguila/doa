@@ -1,5 +1,5 @@
 {
-  "homepage":"https://GonzaloAguila.github.io/doa",
+  "homepage": "https://GonzaloAguila.github.io/doa",
   "name": "doa",
   "version": "0.1.0",
   "private": false,
@@ -21,6 +21,7 @@
     "react-scripts": "4.0.3",
     "react-world-flags": "^1.4.0",
     "styled-components": "^5.1.1",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -29,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
