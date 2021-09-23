@@ -14,7 +14,7 @@ function Map() {
                 backgroundRepeat: 'no-repeat',
                 width: '100vw',
                 maxWidth: '100%',
-                height: '700px',
+                height: '600px',
             }}
         >
             <div className={styles.toprow}>Idiomas</div>
