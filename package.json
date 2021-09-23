@@ -1,5 +1,5 @@
 {
-  "homepage": "https://GonzaloAguila.github.io/doa",
+  "homepage": "dtpoverall.com",
   "name": "doa",
   "version": "0.1.0",
   "private": false,
@@ -29,7 +29,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && echo 'dtpoverall.com' > ./build/CNAME",
+    "predeploy": "npm run build && echo dtpoverall.com > ./build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
