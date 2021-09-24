@@ -10,7 +10,6 @@ function Map() {
             style={{
                 backgroundImage: `url(${background})`,
                 backgroundPosition: 'center',
-                backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 width: '100vw',
                 maxWidth: '100%',
