@@ -3,12 +3,13 @@ import styles from './style.module.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import emailjs from 'emailjs-com';
 import data from '../../utils/email';
+import ParticlesBg from 'particles-bg';
 
 function RequestForm() {
     const { USERID, TEMPLATE, SERVICE } = data;
     return (
         <div className={styles.container}>
-            <div className={styles.toprow}>Contactenos</div>
+            <div id='form' className={styles.toprow}>Contactenos</div>
             <Formik
                 initialValues={{ email: '', name: '', phone: '', textarea: '' }}
                 validate={(values) => {
@@ -29,14 +30,14 @@ function RequestForm() {
                 onSubmit={async (values, { setSubmitting, resetForm }) => {
                     setSubmitting(true);
                     try {
-                        await emailjs.send(SERVICE,TEMPLATE,values,USERID);
-                        alert('Mensaje enviado! Nos pondremos en contacto a la brevedad.')
+                        await emailjs.send(SERVICE, TEMPLATE, values, USERID);
+                        alert('Mensaje enviado! Nos pondremos en contacto a la brevedad.');
                     } catch (error) {
-                        console.log('Error:',error);
-                        alert('Ocurrio un error. Intente nuevamente mas tarde!')
+                        console.log('Error:', error);
+                        alert('Ocurrio un error. Intente nuevamente mas tarde!');
                     } finally {
-                      setSubmitting(false)
-                      resetForm({values: ''})
+                        setSubmitting(false);
+                        resetForm({ values: '' });
                     }
                 }}
             >
@@ -54,7 +55,9 @@ function RequestForm() {
                             <button type='submit' disabled={isSubmitting} style={{ color: isSubmitting ? 'grey' : 'white' }}>
                                 Enviar
                             </button>
+                            <ParticlesBg color={'#ffffff'} num={3} type="fountain" bg={true} />
                         </Form>
+
                     );
                 }}
             </Formik>

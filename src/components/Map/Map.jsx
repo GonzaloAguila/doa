@@ -17,7 +17,7 @@ function Map() {
                 height: '600px',
             }}
         >
-            <div className={styles.toprow}>Idiomas</div>
+            <div id='idiomas' className={styles.toprow}>Idiomas</div>
             <div className={styles.contentContainer}>
                 <h2 className={styles.contentTitle}>Trabajamos con todos los idiomas del mundo, incluidos:</h2>
                 <div className={styles.dataContainer}>

@@ -5,7 +5,7 @@ import { BsFileCheck, BsBoxArrowRight, BsListUl, BsFileEarmarkDiff, BsGrid3X2Gap
 function Services() {
     return (
         <div className={styles.container}>
-            <div className={styles.toprow}>Servicios</div>
+            <div id='servicios' className={styles.toprow}>Servicios</div>
             <div className={styles.row}>
                 <div className={`${styles.card} ${styles.impar}`}>
                     <h3>DTP Multilenguaje</h3>

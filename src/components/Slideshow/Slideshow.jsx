@@ -35,7 +35,7 @@ function Slideshow() {
     ])
 
     return (
-        <div className={styles.container}>
+        <div id='slider' className={styles.container}>
                <Carousel breakPoints={breakpoints}>
                    {items.map((item) => {
                      return <div key={item.id} className={styles.item}>
