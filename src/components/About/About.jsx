@@ -17,7 +17,7 @@ function About() {
                 <div className={styles.cardcontainer}>
                     <div className={styles.card}>
                         <img src={implementacion} alt='' />
-                        <h1>Analysis</h1>
+                        <h1>Analysiss</h1>
                         <h3>We take your project, analyze it and estimate a competitive budget.</h3>
                     </div>
                     <div className={styles.card}>
