@@ -1,0 +1,12 @@
+{
+    "about": {
+        "main" : "Creemos que la excelencia en el DTP se logra por medio de 3 pilares: Atención personalizada, calidad y velocidad, por lo tanto desde hace más de 8 años nos enfocamos en ello para brindar un servicio personalizado según la necesidad de cada cliente, rápido y calificado.",
+        "title" : "Sobre Nosotros",
+        "analysis" : "Análisis",
+        "analysisText" : "Tomamos su proyecto, lo analizamos y estimamos un presupuesto competitivo",
+        "implementation": "Implementación",
+        "implementationText" : "Elevamos su proyecto a nuestros expertos como lo requiere su industria",
+        "quality": "Control de calidad",
+        "qualityText" : "Pasamos su archivo por nuestro control de calidad para entregar un producto final óptimo"
+    }
+}

@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './style.module.css';
 import background from '../../assets/images/globo.png';
+import { useTranslation } from 'react-i18next';
 import { FaCheckCircle } from 'react-icons/fa';
 
 function Map() {
+    const [t, i18n] = useTranslation('languages');
     return (
         <div
             className={styles.globalContainer}
@@ -16,9 +18,9 @@ function Map() {
                 height: '600px',
             }}
         >
-            <div id='idiomas' className={styles.toprow}>Idiomas</div>
+            <div id='idiomas' className={styles.toprow}>{t('languages.title')}</div>
             <div className={styles.contentContainer}>
-                <h2 className={styles.contentTitle}>Trabajamos con todos los idiomas del mundo, incluidos:</h2>
+                <h2 className={styles.contentTitle}>{t('languages.main')}</h2>
                 <div className={styles.dataContainer}>
                     <div className={styles.card}>
                         <FaCheckCircle className={styles.arrow} />

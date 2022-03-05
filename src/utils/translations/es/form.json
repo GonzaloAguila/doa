@@ -1,0 +1,8 @@
+{
+    "form": {
+        "btn" : "Enviar",
+        "title" : "Contáctenos",
+        "name" : "Nombre",
+        "phone" : "Teléfono"
+    }
+}

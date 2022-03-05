@@ -14,7 +14,7 @@ function Footer() {
                     <h4>Socials</h4>
                     <ul className={styles.social}>
                         <FaLinkedin className={styles.icon}></FaLinkedin>
-                        <FaFacebookSquare className={styles.icon}></FaFacebookSquare>
+                        <FaFacebookSquare  className={styles.icon}></FaFacebookSquare>
                         <FaInstagram className={styles.icon}></FaInstagram>
                     </ul>
                 </div>

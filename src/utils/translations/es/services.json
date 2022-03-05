@@ -1,0 +1,11 @@
+{
+    "services": {
+        "title": "Servicios",
+        "dtp": "DTP Multilenguaje",
+        "conv": "Conversion de archivos",
+        "memo": "Memorias de traducción",
+        "prep": "Preparación de archivos",
+        "set": "Seteo y formateo",
+        "edi": "Edicion de imagenes"
+    }
+}

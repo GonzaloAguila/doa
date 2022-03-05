@@ -80,7 +80,7 @@ ul {
 .logo{
     max-width: 100%;
     max-height: 100%;
-    height: 180px;
+    height: 250px;
     padding-top: 30px;
 }
 
@@ -105,6 +105,10 @@ ul {
         border-radius: 20%;
         width: 70px;
         border-radius: 90%;
+    }
+    .logo{
+        height: 200px;
+        padding-top: 20px;
     }
 
 }

@@ -32,7 +32,7 @@ function Header() {
                     <Link activeClass='active' spy={true} smooth={true} offset={20} duration={400} to='idiomas'>
                         <li>{t('navbar.idioma')}</li>
                     </Link>
-                    <li>{t('navbar.estrategia')}</li>
+                    {/* <li>{t('navbar.estrategia')}</li> */}
                     <Link activeClass='active' spy={true} smooth={true} offset={0} duration={400} to='slider'>
                         <li>{t('navbar.software')}</li>
                     </Link>

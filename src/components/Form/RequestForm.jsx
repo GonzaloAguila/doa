@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import styles from './style.module.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { useTranslation } from 'react-i18next';
 import emailjs from 'emailjs-com';
 import data from '../../utils/email';
 import ParticlesBg from 'particles-bg';
 
 function RequestForm() {
     const { USERID, TEMPLATE, SERVICE } = data;
+    const [t, i18n] = useTranslation('form');
+
     return (
         <div className={styles.container}>
-            <div id='form' className={styles.toprow}>Contactenos</div>
+            <div id='form' className={styles.toprow}>{t('form.title')}</div>
             <Formik
                 initialValues={{ email: '', name: '', phone: '', textarea: '' }}
                 validate={(values) => {
@@ -46,16 +49,16 @@ function RequestForm() {
                         <Form className={styles.form}>
                             <Field placeholder='Email' className={styles.input} type='email' name='email' />
                             <ErrorMessage className={styles.error} name='email' component='div' />
-                            <Field placeholder='Nombre' className={styles.input} type='name' name='name' />
+                            <Field placeholder={t('form.name')} className={styles.input} type='name' name='name' />
                             <ErrorMessage className={styles.error} name='name' component='div' />
-                            <Field placeholder='Telefono' className={styles.input} type='phone' name='phone' />
+                            <Field placeholder={t('form.phone')} className={styles.input} type='phone' name='phone' />
                             <ErrorMessage className={styles.error} name='phone' component='div' />
                             <Field className={styles.textarea} as='textarea' type='textarea' name='textarea' />
                             <ErrorMessage className={styles.error} name='textarea' component='div' />
                             <button type='submit' disabled={isSubmitting} style={{ color: isSubmitting ? 'grey' : 'white' }}>
-                                Enviar
+                            {t('form.btn')}
                             </button>
-                            <ParticlesBg color={'#ffffff'} num={3} type="fountain" bg={true} />
+                            <ParticlesBg color={'#ffffff'} num={1} type="fountain" bg={true} />
                         </Form>
 
                     );

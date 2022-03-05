@@ -1,7 +1,7 @@
 {
   "homepage": "https://dtpoverall.com",
   "name": "doa",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
