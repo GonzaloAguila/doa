@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './style.module.css';
-import { FaLinkedin, FaInstagram, FaFacebookSquare } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaFacebookSquare, FaWhatsapp } from 'react-icons/fa';
 import logo from '../../assets/images/logo.png';
 
 function Footer() {
@@ -13,9 +13,9 @@ function Footer() {
                 <div className={styles.secondcol}>
                     <h4>Socials</h4>
                     <ul className={styles.social}>
-                        <FaLinkedin className={styles.icon}></FaLinkedin>
-                        <FaFacebookSquare  className={styles.icon}></FaFacebookSquare>
-                        <FaInstagram className={styles.icon}></FaInstagram>
+                        <FaLinkedin onClick={() =>window.open("https://www.linkedin.com/company/doa-dtpservices/", "_blank")} className={styles.icon}></FaLinkedin>
+                        <FaWhatsapp onClick={() =>window.open("https://web.whatsapp.com/send?phone=5493548506301", "_blank")}  className={styles.icon}></FaWhatsapp>
+                        <FaInstagram onClick={() =>window.open("https://www.instagram.com/doa.dtpservices/", "_blank")} className={styles.icon}></FaInstagram>
                     </ul>
                 </div>
             </div>

@@ -14,7 +14,6 @@ function Map() {
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 width: '100vw',
-                maxWidth: '100%',
                 height: '600px',
             }}
         >
