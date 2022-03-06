@@ -11,8 +11,8 @@ function Map() {
             className={styles.globalContainer}
             style={{
                 backgroundImage: `url(${background})`,
-                backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
                 width: '100vw',
                 height: '600px',
             }}

@@ -11,7 +11,7 @@ function Footer() {
                     <img src={logo} alt='' />
                 </div>
                 <div className={styles.secondcol}>
-                    <h4>Socialss</h4>
+                    <h4>Socials</h4>
                     <ul className={styles.social}>
                         <FaLinkedin onClick={() =>window.open("https://www.linkedin.com/company/doa-dtpservices/", "_blank")} className={styles.icon}></FaLinkedin>
                         <FaWhatsapp onClick={() =>window.open("https://web.whatsapp.com/send?phone=5493548506301", "_blank")}  className={styles.icon}></FaWhatsapp>

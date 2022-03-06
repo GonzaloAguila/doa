@@ -38,7 +38,13 @@ function Slideshow() {
         <div id='slider' className={styles.container}>
                <Carousel breakPoints={breakpoints}>
                    {items.map((item) => {
-                     return <div key={item.id} className={styles.item}>
+                   return item.id === 6 ? 
+                    <div key={item.id} className={styles.item}>
+                         <h5>{item.text}</h5>
+                         <img style={{height: '120px', width: '200px'}} src={item.src} alt={item.text} />
+                     </div>
+                    : 
+                      <div key={item.id} className={styles.item}>
                          <h5>{item.text}</h5>
                          <img src={item.src} alt={item.text} />
                      </div>

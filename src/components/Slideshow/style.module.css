@@ -28,8 +28,7 @@
     max-width: 290px;
     max-height: 120px;
     overflow: hidden;
-    padding: 10px 0;
-
+    margin-top: 10px;
 }
 
 .item h5 {
