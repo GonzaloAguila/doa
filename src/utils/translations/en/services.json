@@ -6,6 +6,22 @@
         "memo": "Translation Memories",
         "prep": "File Preparation",
         "set": "Setup and Formatting",
-        "edi": "Image Editing"
+        "edi": "Image Editing",
+        "tooltips": {
+            "dtp" : "It is the graphic process by means of Software dedicated to convert or modify documents or files already created after going through the translation phase. With the objective of maintaining or improving the quality and formatting previously established.",
+            "conversion": "By means of different techniques and softwares we analyze the best way to convert several types of files that need to be later edited or translated, giving the possibility to handle the information and the content inside them in a free way. Optimizing the final result that is sought, and giving the possibility of returning it later to the original format.",
+            "formatOne": "Using Template we can create and provide stable formats for projects that follow common patterns with data modifications, whether text, columns, size or orientation, formats are created that can optimize the speed and consistency of these kinds of files.",
+            "formatTwo" : "Formatting on the other hand is the basis of post-translation, where font type, size, text pattern and the client's interface wishes are returned to the original order or as close to it as possible in the target language.",
+            "imageOne" : "The editing of non-editable images is often a challenge when it comes to applying the desired translations without losing the quality of the same but also the sense with which it was created.",
+            "imageTwo": "By means of different software, it is possible to organically integrate the new texts into the images.",
+            "filePrepOne": "In this part we focus on following a process divided in stages, this allows us to give order and stability when creating a plan to follow. These stages include:",
+            "filePrepChildOne": "Planning",
+            "filePrepChildTwo": "Drafting",
+            "filePrepChildThree": "Proofreading",
+            "filePrepChildFour": "Editing",
+            "filePrepTwo": "Thus being able to shape a skeleton on which to work more orderly, of course this is not an unalterable order but can be affected for a better adaptability related to the project or the client's specific requirements.",
+            "memoOne": "As part of a DTP QA process we use the references achieved by the translation memories to obtain a result in line with what the original file was intended to convey.",
+            "memoTwo": "This gives a persistent context that encompasses the content of the entire project. This also reduces the review time of the translators by improving the distribution of the time allotted."
+        }
     }
 }
