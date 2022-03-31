@@ -51,14 +51,6 @@ function Services() {
                 return (
                     <span>
                         {t('services.tooltips.filePrepOne')}
-                        <br />
-                        <br />
-                        <li>{t('services.tooltips.filePrepChildOne')}</li>
-                        <li>{t('services.tooltips.filePrepChildTwo')}</li>
-                        <li>{t('services.tooltips.filePrepChildThree')}</li>
-                        <li>{t('services.tooltips.filePrepChildFour')}</li>
-                        <br />
-                        {t('services.tooltips.filePrepTwo')}
                     </span>
                 );
             case 'set':
