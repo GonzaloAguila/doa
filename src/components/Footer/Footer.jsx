@@ -15,7 +15,6 @@ function Footer() {
                     <ul className={styles.social}>
                         <FaLinkedin onClick={() =>window.open("https://www.linkedin.com/company/doa-dtpservices/", "_blank")} className={styles.icon}></FaLinkedin>
                         <FaWhatsapp onClick={() =>window.open("https://web.whatsapp.com/send?phone=5493548506301", "_blank")}  className={styles.icon}></FaWhatsapp>
-                        <FaInstagram onClick={() =>window.open("https://www.instagram.com/doa.dtpservices/", "_blank")} className={styles.icon}></FaInstagram>
                     </ul>
                 </div>
             </div>

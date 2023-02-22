@@ -1,18 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './style.module.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useTranslation } from 'react-i18next';
 import emailjs from 'emailjs-com';
 import data from '../../utils/email';
-import ParticlesBg from 'particles-bg';
+import FormBG1 from '../../assets/images/form-1.png';
+import FormBG2 from '../../assets/images/form-2.png';
+import FormBG3 from '../../assets/images/form-3.png';
+import FormBG4 from '../../assets/images/form-4.png';
 
 function RequestForm() {
     const { USERID, TEMPLATE, SERVICE } = data;
     const [t, i18n] = useTranslation('form');
+    const [selectedIndex, setSelectedIndex] = useState(Math.floor(Math.random() * 4));
+    const BACKGROUND_IMAGES_ARRAY = [
+       FormBG1,
+       FormBG2,
+       FormBG3,
+       FormBG4,
+    ];
+
+    useEffect(() => {
+        setSelectedIndex(Math.floor(Math.random() * 4));
+    }, []);
 
     return (
         <div className={styles.container}>
-            <div id='form' className={styles.toprow}>{t('form.title')}</div>
+            <div id='form' className={styles.toprow}>
+                {t('form.title')}
+            </div>
             <Formik
                 initialValues={{ email: '', name: '', phone: '', textarea: '' }}
                 validate={(values) => {
@@ -46,7 +62,7 @@ function RequestForm() {
             >
                 {({ isSubmitting }) => {
                     return (
-                        <Form className={styles.form}>
+                        <Form style={{ backgroundImage: `url(${BACKGROUND_IMAGES_ARRAY[selectedIndex]})` }} className={styles.form}>
                             <Field placeholder='Email' className={styles.input} type='email' name='email' />
                             <ErrorMessage className={styles.error} name='email' component='div' />
                             <Field placeholder={t('form.name')} className={styles.input} type='name' name='name' />
@@ -56,11 +72,9 @@ function RequestForm() {
                             <Field className={styles.textarea} as='textarea' type='textarea' name='textarea' />
                             <ErrorMessage className={styles.error} name='textarea' component='div' />
                             <button type='submit' disabled={isSubmitting} style={{ color: isSubmitting ? 'grey' : 'white' }}>
-                            {t('form.btn')}
+                                {t('form.btn')}
                             </button>
-                            <ParticlesBg color={'#ffffff'} num={1} type="fountain" bg={true} />
                         </Form>
-
                     );
                 }}
             </Formik>
