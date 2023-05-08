@@ -19,7 +19,6 @@ function Hero() {
                     delay: 120
                   }}
                 />
-            <img alt='logo' src={experience}></img>
             <h3>{t('hero.subtitulo')} </h3>
         </div>
     );
