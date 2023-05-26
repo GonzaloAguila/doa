@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Questrial&display=swap');
 
-.container{
+.container {
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: var(--text-secondary);
     color: #ffffff;
     font-family: 'Staatliches', cursive;
     letter-spacing: 1.2px;
@@ -46,7 +46,7 @@
     object-fit: cover;
 }
 
-.secondcol   {
+.secondcol {
     width: 50%;
     height: 100%;
     display: flex;
@@ -63,6 +63,6 @@
     margin: 0 3px;
 }
 
-.icon:hover{
-    color: var(--text-secondary);
+.icon:hover {
+    color: var(--text-primary);
 }

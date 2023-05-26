@@ -26,11 +26,7 @@ function Services() {
             case 'dtp':
                 return <span>{t('services.tooltips.dtp')}</span>;
             case 'conv':
-                return (
-                    <span>
-                       {t('services.tooltips.conversion')}
-                    </span>
-                );
+                return <span>{t('services.tooltips.conversion')}</span>;
             case 'memo':
                 return (
                     <span>
@@ -47,12 +43,19 @@ function Services() {
                         {t('services.tooltips.imageTwo')}
                     </span>
                 );
-            case 'prep':
+            case 'prepOne':
+                return <span>{t('services.tooltips.filePrepOne')}</span>;
+            case 'prepTwo':
                 return (
-                    <span>
-                        {t('services.tooltips.filePrepOne')}
-                    </span>
+                    <ul style={{margin: '20px 0 20px 20px'}}>
+                        <li>{t('services.tooltips.filePrepChildOne')}</li>
+                        <li>{t('services.tooltips.filePrepChildTwo')}</li>
+                        <li>{t('services.tooltips.filePrepChildThree')}</li>
+                        <li>{t('services.tooltips.filePrepChildFour')}</li>
+                    </ul>
                 );
+            case 'prepThree':
+                return <span>{t('services.tooltips.filePrepTwo')}</span>;
             case 'set':
                 return (
                     <span>
@@ -72,58 +75,57 @@ function Services() {
             </div>
             <div className={styles.row}>
                 <div className={`${styles.card} ${styles.impar}`}>
-                    <LightTooltip title={servicesText('dtp')}>
+                    <div className={`${styles.cardHeader}`}>
+                        <BsFileCheck className={styles.icon} />
                         <h3>{t('services.dtp')}</h3>
-                    </LightTooltip>
-                    <BsFileCheck className={styles.icon} />
+                    </div>
+                    <div className={`${styles.cardContent}`}>{servicesText('dtp')}</div>
                 </div>
-                <div className={`${styles.card} ${styles.par}`}>
-                    <LightTooltip title={servicesText('conv')}>
+                <div className={`${styles.card} ${styles.impar}`}>
+                    <div className={`${styles.cardHeader}`}>
+                        <BsBoxArrowRight className={styles.icon} />
                         <h3>{t('services.conv')}</h3>
-                    </LightTooltip>
-                    <BsBoxArrowRight className={styles.icon} />
+                    </div>
+                    <div className={`${styles.cardContent}`}>{servicesText('conv')}</div>
                 </div>
+            </div>
+            <div div className={`${styles.row}`}>
                 <div className={`${styles.card} ${styles.impar}`}>
-                    <LightTooltip title={servicesText('memo')}>
+                    <div className={`${styles.cardHeader}`}>
+                        <BsListUl className={styles.icon} />
                         <h3>{t('services.memo')}</h3>
-                    </LightTooltip>
-                    <BsListUl className={styles.icon} />
-                </div>
-            </div>
-            <div className={styles.row}>
-                <div className={`${styles.card} ${styles.par}`}>
-                    <LightTooltip title={servicesText('prep')}>
-                        <h3>{t('services.prep')}</h3>
-                    </LightTooltip>
-                    <BsFileEarmarkDiff className={styles.icon} />
+                    </div>
+                    <div className={`${styles.cardContent}`}>{servicesText('memo')}</div>
                 </div>
                 <div className={`${styles.card} ${styles.impar}`}>
-                    <LightTooltip title={servicesText('set')}>
-                        <h3>{t('services.set')}</h3>
-                    </LightTooltip>
-                    <BsGrid3X2GapFill className={styles.icon} />
-                </div>
-                <div className={`${styles.card} ${styles.par}`}>
-                    <LightTooltip title={servicesText('image')}>
+                    <div className={`${styles.cardHeader}`}>
+                        <BsBrush className={styles.icon} />
                         <h3>{t('services.edi')}</h3>
-                    </LightTooltip>
-                    <BsBrush className={styles.icon} />
+                    </div>
+                    <div className={`${styles.cardContent}`}>{servicesText('image')}</div>
                 </div>
             </div>
-            {/*  <div className={styles.bottomrow}>
-                <div className={styles.bottomcard}>
-                    <h4>134</h4>
-                    <h5>Proyectos entregados.</h5>
+            <div className={`${styles.row} ${styles.bottomRow}`}>
+                <div className={`${styles.card} ${styles.impar}`}>
+                    <div className={`${styles.cardHeader}`}>
+                        <BsGrid3X2GapFill className={styles.icon} />
+                        <h3>{t('services.set')}</h3>
+                    </div>
+                    <div className={`${styles.cardContent}`}>{servicesText('set')}</div>
                 </div>
-                <div className={styles.bottomcard}>
-                    <h4>5</h4>
-                    <h5>Años de experiencia.</h5>
+
+                <div className={`${styles.card} ${styles.impar}`}>
+                    <div className={`${styles.cardHeader}`}>
+                        <BsFileEarmarkDiff className={styles.icon} />
+                        <h3>{t('services.prep')}</h3>
+                    </div>
+                    <div className={`${styles.cardContent}`}>
+                        {servicesText('prepOne')}
+                        {servicesText('prepTwo')}
+                        {servicesText('prepThree')}
+                    </div>
                 </div>
-                <div className={styles.bottomcard}>
-                    <h4>42</h4>
-                    <h5>Clientes satisfechos.</h5>
-                </div>
-            </div> */}
+            </div>
             <div id='Software' className={styles.toprow}>
                 Software
             </div>

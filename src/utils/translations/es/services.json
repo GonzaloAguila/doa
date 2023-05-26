@@ -2,11 +2,11 @@
     "services": {
         "title": "Servicios",
         "dtp": "DTP Multilenguaje",
-        "conv": "Conversion de archivos",
+        "conv": "Conversión de archivos",
         "memo": "Memorias de traducción",
         "prep": "Preparación de archivos",
         "set": "Seteo y formateo",
-        "edi": "Edicion de imagenes",
+        "edi": "Edicion de imágenes",
         "tooltips": {
             "dtp" : "Proceso grafico por medio de programas de edición dedicado a convertir o modificar documentos o archivos ya creados luego de pasar por la fase de traducción, con el objetivo de mantener o mejorar la calidad y el formato establecido previamente.",
             "conversion": "Por medio de diferentes técnicas y Softwares analizamos la mejor manera para convertir distintos tipos de archivos que necesitan ser luego editados o traducidos, dando la posibilidad de poder manejar la información y el contenido dentro de ellos de forma libre. Optimizando el resultado final que se busca, y dando la posibilidad de luego volverlo al Formato original.",
